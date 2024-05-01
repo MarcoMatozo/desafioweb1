@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Cadastro de Reserva</h1>
+            <form id="reservaForm">
+                <div class="form-group">
+                    <label for="placa">Placa do Veículo</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome do Proprietário</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="apartamento">Número do Apartamento</label>
+                    <input type="text" id="apartamento" name="apartamento" required>
+                </div>
+                <div class="form-group">
+                    <label for="bloco">Bloco do Apartamento</label>
+                    <input type="text" id="bloco" name="bloco" required>
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo do Veículo</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor do Veículo</label>
+                    <input type="text" id="cor" name="cor" required>
+                </div>
+                <div class="form-group">
+                    <label for="vaga">Número da Vaga de Estacionamento</label>
+                    <input type="text" id="vaga" name="vaga" required>
+                </div>
+                <button type="button" id="salvarButton">Salvar</button>
+                <button type="button" onclick="window.location.href='consultar_vagas.html'">Consultar Vagas</button>
+                <button type="button" onclick="window.location.href='listar_vagas.html'">Listar Vagas</button>
+            </form>
+        </div>
+        <div class="info-container" id="infoReserva">
+            <!-- As informações serão adicionadas aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+.
